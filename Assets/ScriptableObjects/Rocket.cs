@@ -6,10 +6,10 @@ namespace LaunchBad.ScriptableObjects
     [CreateAssetMenu(fileName = "Rocket", menuName = "Scriptable Objects/Rocket")]
     public class Rocket : ScriptableObject
     {
+        [field: SerializeField] public float CountDownDuration { get; private set; }
         [SerializeField] private string rocketName;
-        [SerializeField] private float countDownDuration;
         [SerializeField] private int rocketWeight;
 
-        public List<FuelTank> FuelTanks { get; private set; }
+        [field: SerializeField] public List<FuelTank> FuelTanks { get; private set; }
     }
 }
