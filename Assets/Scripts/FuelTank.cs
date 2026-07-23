@@ -1,5 +1,6 @@
 ﻿namespace LaunchBad
 {
+    [System.Serializable]
     public class FuelTank
     {
         public float InitialFuelAmount;
