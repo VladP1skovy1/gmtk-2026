@@ -1,18 +1,33 @@
 using System;
 using System.Collections;
+using LaunchBad.ScriptableObjects;
 using UnityEngine;
 
 namespace LaunchBad.Core
 {
     public class CountDownManager : MonoBehaviour
     {
+        [SerializeField] private float frequency = 1f;
         public static event Action<float> OnCountDown;
-        private float _countDownDuration;
         
-        public void StartCountDown(float countDownDuration)
+        private float _startTime;
+
+        private void OnEnable()
         {
+            GameManager.OnRocketChanged += StartCountDown;
+        }
+        
+        private void OnDisable()
+        {
+            GameManager.OnRocketChanged -= StartCountDown;
+        }
+
+        private void StartCountDown(Rocket rocket)
+        {
+            var countDownDuration = rocket.CountDownDuration;
             OnCountDown?.Invoke(countDownDuration);
-            StartCoroutine(CountDownCoroutine(_countDownDuration));;
+            _startTime = Time.time;
+            StartCoroutine(CountDownCoroutine(countDownDuration));
         }
 
         private IEnumerator CountDownCoroutine(float countDownDuration)
@@ -20,9 +35,9 @@ namespace LaunchBad.Core
             var elapsedTime = 0f;
             while (elapsedTime < countDownDuration)
             {
-                elapsedTime += Time.deltaTime;
+                elapsedTime = Time.time - _startTime;
                 OnCountDown?.Invoke(countDownDuration - elapsedTime);
-                yield return null;
+                yield return new WaitForSeconds(frequency);
             }
             OnCountDown?.Invoke(0f);
         }
