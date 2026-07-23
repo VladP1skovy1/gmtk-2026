@@ -1,0 +1,71 @@
+﻿using System.Collections.Generic;
+using LaunchBad.Core;
+using LaunchBad.ScriptableObjects;
+using LaunchBad.UI;
+using UnityEngine;
+
+namespace LaunchBad
+{
+    public class FuelWindow : MonoBehaviour
+    {
+        [SerializeField] private List<RocketSlider> sliders;
+        private List<FuelTank> _fuelTanks;
+
+
+        private void SetTanks(Rocket rocket)
+        {
+            _fuelTanks = rocket.FuelTanks;
+            for (var i = 0; i < rocket.FuelTanks.Count; i++)
+            {
+                _fuelTanks[i].CurrentFuelAmount = _fuelTanks[i].InitialFuelAmount;
+                sliders[i].SetValue(rocket.FuelTanks[i].CurrentFuelAmount);
+                sliders[i].SetPointer(rocket.FuelTanks[i].RequiredFuelAmount);
+                sliders[i].gameObject.SetActive(true);
+            }
+        }
+        
+        private void UpdateTanks(float time)
+        {
+            for (var i = 0; i < _fuelTanks.Count; i++)
+            {
+                if (time <= _fuelTanks[i].FuelLeakStartTime)
+                {
+                    _fuelTanks[i].CurrentFuelAmount -= _fuelTanks[i].FuelLeakSpeed * Time.deltaTime;
+                    sliders[i].SetValue(_fuelTanks[i].CurrentFuelAmount);
+                }
+
+                if (!(time <= 0)) continue;
+                if (_fuelTanks[i].CurrentFuelAmount <= _fuelTanks[i].RequiredFuelAmount)
+                {
+                    SendGameOver();
+                }
+            }
+        }
+        
+        private void SendGameOver()
+        {
+        }
+        
+        private void OnCountDown(float time)
+        {
+            UpdateTanks(time);
+        }
+
+        private void OnRocketChange(Rocket rocket)
+        {
+            SetTanks(rocket);
+        }
+        
+        private void OnEnable()
+        {
+            CountDownManager.OnCountDown += OnCountDown;
+            GameManager.OnRocketChanged += OnRocketChange;
+        }
+
+        private void OnDisable()
+        {
+            CountDownManager.OnCountDown -= OnCountDown;
+            GameManager.OnRocketChanged -= OnRocketChange;
+        }
+    }
+}
