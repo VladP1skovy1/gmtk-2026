@@ -8,5 +8,6 @@
         public float RequiredFuelAmount;
         public float FuelLeakSpeed;
         public float FuelLeakStartTime;
+        public bool isLeaking;
     }
 }

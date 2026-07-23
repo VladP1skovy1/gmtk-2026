@@ -10,7 +10,12 @@ namespace LaunchBad
     {
         [SerializeField] private List<RocketSlider> sliders;
         private List<FuelTank> _fuelTanks;
+        
 
+        private void Update()
+        {
+            UpdateTanks();
+        }
 
         private void SetTanks(Rocket rocket)
         {
@@ -18,20 +23,30 @@ namespace LaunchBad
             for (var i = 0; i < rocket.FuelTanks.Count; i++)
             {
                 _fuelTanks[i].CurrentFuelAmount = _fuelTanks[i].InitialFuelAmount;
+                _fuelTanks[i].isLeaking = false;
                 sliders[i].SetValue(rocket.FuelTanks[i].CurrentFuelAmount);
                 sliders[i].SetPointer(rocket.FuelTanks[i].RequiredFuelAmount);
                 sliders[i].gameObject.SetActive(true);
             }
         }
+
+        private void UpdateTanks()
+        {
+            for (var i = 0; i < _fuelTanks.Count; i++)
+            {
+                if (!_fuelTanks[i].isLeaking) continue;
+                _fuelTanks[i].CurrentFuelAmount -= _fuelTanks[i].FuelLeakSpeed * Time.deltaTime;
+                sliders[i].SetValue(_fuelTanks[i].CurrentFuelAmount);
+            }
+        }
         
-        private void UpdateTanks(float time)
+        private void CheckTanks(float time)
         {
             for (var i = 0; i < _fuelTanks.Count; i++)
             {
                 if (time <= _fuelTanks[i].FuelLeakStartTime)
                 {
-                    _fuelTanks[i].CurrentFuelAmount -= _fuelTanks[i].FuelLeakSpeed * Time.deltaTime;
-                    sliders[i].SetValue(_fuelTanks[i].CurrentFuelAmount);
+                    _fuelTanks[i].isLeaking = true;
                 }
 
                 if (!(time <= 0)) continue;
@@ -48,14 +63,14 @@ namespace LaunchBad
         
         private void OnCountDown(float time)
         {
-            UpdateTanks(time);
+            CheckTanks(time);
         }
-
+        
         private void OnRocketChange(Rocket rocket)
         {
             SetTanks(rocket);
         }
-        
+
         private void OnEnable()
         {
             CountDownManager.OnCountDown += OnCountDown;
