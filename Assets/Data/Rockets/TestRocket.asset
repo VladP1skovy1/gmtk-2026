@@ -12,6 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f053f06b711a9b43a0fbf0900445976, type: 3}
   m_Name: TestRocket
   m_EditorClassIdentifier: Assembly-CSharp::Rocket
+  <CountDownDuration>k__BackingField: 30
   rocketName: SLS
-  countDownDuration: 17
   rocketWeight: 8000
+  <FuelTanks>k__BackingField:
+  - InitialFuelAmount: 0.3
+    CurrentFuelAmount: 0.27592358
+    RequiredFuelAmount: 0.7
+    FuelLeakSpeed: 0.1
+    FuelLeakStartTime: 30
+  - InitialFuelAmount: 0.5
+    CurrentFuelAmount: 0.47592357
+    RequiredFuelAmount: 0.5
+    FuelLeakSpeed: 0.1
+    FuelLeakStartTime: 30
+  - InitialFuelAmount: 0.7
+    CurrentFuelAmount: 0.6759236
+    RequiredFuelAmount: 0.3
+    FuelLeakSpeed: 0.1
+    FuelLeakStartTime: 30
