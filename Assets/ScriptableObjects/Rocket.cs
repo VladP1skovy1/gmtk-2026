@@ -21,6 +21,9 @@ namespace LaunchBad.ScriptableObjects
         [field: Header("Engine Parameters")]
         [field: SerializeField] public List<EngineSpriteMapping> EngineSpriteMappings { get; private set; }
         [field: SerializeField] public DiscreteTimetable<EngineStatus> EngineTimetable { get; private set; }
+        [field: Header("Astronauts Parameters")]
+        [field: SerializeField] public List<AstronautSpriteMapping> AstronautSpriteMappings { get; private set; }
+        [field: SerializeField] public List<DiscreteTimetable<AstronautStatus>> AstronautsTimetables { get; private set; }
         [field: Header("Assessment Parameters")]
         [field: SerializeField] public bool ShouldBeLaunched { get; private set; }
         [field: SerializeField] public string AssessmentText { get; private set; }

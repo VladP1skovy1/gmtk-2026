@@ -180,7 +180,7 @@ PrefabInstance:
     - target: {fileID: 5420683956872456245, guid: 5832986c95d211848a79a9b4460408e7, type: 3}
       propertyPath: window
       value: 
-      objectReference: {fileID: 8378800767225255750}
+      objectReference: {fileID: 7843783186616403185}
     - target: {fileID: 6560999423307213214, guid: 5832986c95d211848a79a9b4460408e7, type: 3}
       propertyPath: window
       value: 
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ded83b5536194d46a525bbe192c6fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.UI.WindowHeader
---- !u!114 &8378800767225255750 stripped
+--- !u!114 &7843783186616403185 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1837686791932759180, guid: 2280460b490905240aee690cf38923c6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 80233292772466491, guid: 2280460b490905240aee690cf38923c6, type: 3}
   m_PrefabInstance: {fileID: 7910498533670591434}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
