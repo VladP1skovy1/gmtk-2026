@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using LaunchBad.Utils;
 using UnityEngine;
@@ -12,10 +13,9 @@ namespace LaunchBad.ScriptableObjects
         [SerializeField] private int rocketWeight;
 
         [field: SerializeField] public List<FuelTank> FuelTanks { get; private set; }
-        
-        [field: SerializeField] public Timetable<float> WindTimetable { get; private set; }
-        [field: SerializeField] public Timetable<float> TemperatureTimetable { get; private set; }
-        [field: SerializeField] public Timetable<SkyStatus> SkyTimetable { get; private set; }
 
+        [field: SerializeField] public ContinuousTimetable WindTimetable { get; private set; }
+        [field: SerializeField] public ContinuousTimetable TemperatureTimetable { get; private set; }
+        [field: SerializeField] public DiscreteTimetable<SkyStatus> SkyTimetable { get; private set; }
     }
 }
