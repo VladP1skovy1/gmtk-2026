@@ -17,17 +17,50 @@ MonoBehaviour:
   rocketWeight: 8000
   <FuelTanks>k__BackingField:
   - InitialFuelAmount: 0.3
-    CurrentFuelAmount: 0.27592358
+    CurrentFuelAmount: -5.7746406
     RequiredFuelAmount: 0.7
-    FuelLeakSpeed: 0.1
-    FuelLeakStartTime: 30
+    FuelLeakSpeed: 0.3
+    FuelLeakStartTime: 27
+    isLeaking: 1
   - InitialFuelAmount: 0.5
-    CurrentFuelAmount: 0.47592357
+    CurrentFuelAmount: -1.7259266
     RequiredFuelAmount: 0.5
     FuelLeakSpeed: 0.1
     FuelLeakStartTime: 30
+    isLeaking: 1
   - InitialFuelAmount: 0.7
-    CurrentFuelAmount: 0.6759236
+    CurrentFuelAmount: -1.525927
     RequiredFuelAmount: 0.3
     FuelLeakSpeed: 0.1
     FuelLeakStartTime: 30
+    isLeaking: 1
+  <WindTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 10
+    - <Time>k__BackingField: 20
+      <Value>k__BackingField: 15
+    - <Time>k__BackingField: 13
+      <Value>k__BackingField: 30
+    - <Time>k__BackingField: 1
+      <Value>k__BackingField: 5
+  <TemperatureTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 22
+    - <Time>k__BackingField: 20
+      <Value>k__BackingField: 27
+    - <Time>k__BackingField: 5
+      <Value>k__BackingField: 2
+  <SkyTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 0
+    - <Time>k__BackingField: 25
+      <Value>k__BackingField: 1
+    - <Time>k__BackingField: 15
+      <Value>k__BackingField: 2
+    - <Time>k__BackingField: 8
+      <Value>k__BackingField: 1
+    - <Time>k__BackingField: 3
+      <Value>k__BackingField: 0
