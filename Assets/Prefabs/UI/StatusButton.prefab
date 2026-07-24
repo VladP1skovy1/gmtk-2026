@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 4146472312238613281}
   - component: {fileID: 5979784995523018934}
   - component: {fileID: 7584151024227207407}
+  - component: {fileID: 4159573208202549960}
   m_Layer: 5
   m_Name: StatusButton
   m_TagString: Untagged
@@ -258,3 +259,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4159573208202549960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6831456917595120001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2fdb71fe8de8a4eaeed6fb9c69cd7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.UI.WindowButton
+  windowCanvas: {fileID: 0}
