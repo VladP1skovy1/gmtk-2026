@@ -20,6 +20,12 @@ namespace LaunchBad
             GameManager.OnRocketChanged += OnRocketChanged;
             CountDownManager.OnCountDown += OnCountDown;
         }
+        
+        private void OnDisable()
+        {
+            GameManager.OnRocketChanged -= OnRocketChanged;
+            CountDownManager.OnCountDown -= OnCountDown;
+        }
 
         private void OnCountDown(float time)
         {
