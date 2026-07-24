@@ -17,19 +17,19 @@ MonoBehaviour:
   rocketWeight: 8000
   <FuelTanks>k__BackingField:
   - InitialFuelAmount: 0.3
-    CurrentFuelAmount: -11.460213
+    CurrentFuelAmount: -2.750087
     RequiredFuelAmount: 0.7
     FuelLeakSpeed: 0.3
     FuelLeakStartTime: 27
     isLeaking: 1
   - InitialFuelAmount: 0.5
-    CurrentFuelAmount: -3.7248018
+    CurrentFuelAmount: -0.8204879
     RequiredFuelAmount: 0.5
     FuelLeakSpeed: 0.1
     FuelLeakStartTime: 30
     isLeaking: 1
   - InitialFuelAmount: 0.7
-    CurrentFuelAmount: -3.5248015
+    CurrentFuelAmount: -0.62048775
     RequiredFuelAmount: 0.3
     FuelLeakSpeed: 0.1
     FuelLeakStartTime: 30
@@ -107,6 +107,27 @@ MonoBehaviour:
       <Value>k__BackingField: 2
   - entries:
     - <Time>k__BackingField: 30
+      <Value>k__BackingField: 1
+  <LaunchPadStatusInfos>k__BackingField:
+  - status: 0
+    sprite: {fileID: -6992864605617374387, guid: 426fa30b54348ae4ca6854413453bad8, type: 3}
+    reactionTime: 0
+    message: 
+  - status: 2
+    sprite: {fileID: 8311371374761462527, guid: 88245ba4e8793a94f87dfc9845448c44, type: 3}
+    reactionTime: 5
+    message: Birds ate the rocket T_T
+  - status: 1
+    sprite: {fileID: 8738395822379010450, guid: ec646ca7eeba8e143af1cbbb92c1a81d, type: 3}
+    reactionTime: 2
+    message: Satan destroyed the rocket T_T
+  <LaunchPadTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 0
+    - <Time>k__BackingField: 25
+      <Value>k__BackingField: 2
+    - <Time>k__BackingField: 15
       <Value>k__BackingField: 1
   <ShouldBeLaunched>k__BackingField: 0
   <AssessmentText>k__BackingField: 

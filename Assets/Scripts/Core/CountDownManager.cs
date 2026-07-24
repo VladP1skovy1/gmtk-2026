@@ -22,16 +22,24 @@ namespace LaunchBad.Core
         {
             GameManager.OnRocketChanged += StartCountDown;
             AbortButton.OnAbort += StopCountDown;
+            SecurityManager.OnSecurityBreach += StopCountDown;
         }
 
         private void OnDisable()
         {
             GameManager.OnRocketChanged -= StartCountDown;
             AbortButton.OnAbort -= StopCountDown;
+            SecurityManager.OnSecurityBreach -= StopCountDown;
+        }
+
+        private void StopCountDown(LaunchPadStatusInfo obj)
+        {
+            StopCountDown();
         }
 
         private void StopCountDown()
         {
+            _isCountingDown = false;
             StopAllCoroutines();
         }
 

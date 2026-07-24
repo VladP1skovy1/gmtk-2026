@@ -7,5 +7,12 @@ namespace LaunchBad.Utils
     {
         [SerializeField] private protected TimetableEntry<T>[] entries;
         public abstract T GetValueAtTime(float time);
+        
+        public int Length => entries.Length;
+        
+        public TimetableEntry<T> GetEntryAtIndex(int index)
+        {
+            return entries[index];
+        }
     }
 }

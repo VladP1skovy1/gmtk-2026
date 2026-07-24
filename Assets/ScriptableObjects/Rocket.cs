@@ -24,6 +24,9 @@ namespace LaunchBad.ScriptableObjects
         [field: Header("Astronauts Parameters")]
         [field: SerializeField] public List<AstronautSpriteMapping> AstronautSpriteMappings { get; private set; }
         [field: SerializeField] public List<DiscreteTimetable<AstronautStatus>> AstronautsTimetables { get; private set; }
+        [field: Header("Security Parameters")]
+        [field: SerializeField] public List<LaunchPadStatusInfo> LaunchPadStatusInfos { get; private set; }
+        [field: SerializeField] public DiscreteTimetable<LaunchPadStatus> LaunchPadTimetable { get; private set; }
         [field: Header("Assessment Parameters")]
         [field: SerializeField] public bool ShouldBeLaunched { get; private set; }
         [field: SerializeField] public string AssessmentText { get; private set; }
