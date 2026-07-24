@@ -1,17 +1,22 @@
 using System;
 using System.Collections;
 using LaunchBad.ScriptableObjects;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace LaunchBad.Core
 {
     public class CountDownManager : MonoBehaviour
     {
-        [SerializeField] private float frequency = 1f;
+        [FormerlySerializedAs("frequency")] [SerializeField] private float eventFrequency = 1f;
+        [SerializeField] private TextMeshProUGUI countdownText;
         public static event Action<float> OnCountDown;
         public static event Action OnCountDownFinished;
         
         private float _startTime;
+        private float _currentCountDownValue;
+        private bool _isCountingDown;
 
         private void OnEnable()
         {
@@ -30,24 +35,32 @@ namespace LaunchBad.Core
             StopAllCoroutines();
         }
 
-        private void StartCountDown(Rocket rocket)
+        private void Update()
         {
-            var countDownDuration = rocket.CountDownDuration;
-            OnCountDown?.Invoke(countDownDuration);
-            _startTime = Time.time;
-            StartCoroutine(CountDownCoroutine(countDownDuration));
+            if (!_isCountingDown) return;
+            
+            _currentCountDownValue = Mathf.Max(_currentCountDownValue - Time.deltaTime, 0f);
+            countdownText.text = $"T-{_currentCountDownValue:F1}";
         }
 
-        private IEnumerator CountDownCoroutine(float countDownDuration)
+        private void StartCountDown(Rocket rocket)
         {
-            var elapsedTime = 0f;
-            while (elapsedTime < countDownDuration)
+            _currentCountDownValue = rocket.CountDownDuration;
+            OnCountDown?.Invoke(_currentCountDownValue);
+            _isCountingDown = true;
+            StartCoroutine(CountDownCoroutine());
+        }
+
+        private IEnumerator CountDownCoroutine()
+        {
+            while (_currentCountDownValue > 0f)
             {
-                elapsedTime = Time.time - _startTime;
-                OnCountDown?.Invoke(countDownDuration - elapsedTime);
-                yield return new WaitForSeconds(frequency);
+                OnCountDown?.Invoke(_currentCountDownValue);
+                yield return new WaitForSeconds(eventFrequency);
             }
+            
             OnCountDownFinished?.Invoke();
+            _isCountingDown = false;
         }
     }
 }
