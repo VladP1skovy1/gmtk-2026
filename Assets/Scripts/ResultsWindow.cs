@@ -44,7 +44,7 @@ namespace LaunchBad
             (resultsText.text, assessmentText.text) = (wasLaunched, rocket.ShouldBeLaunched) switch
             {
                 (true, true) => (tpMessage, ""),
-                (false, false) => (tnMessage, ""),
+                (false, false) => (tnMessage, rocket.AssessmentText),
                 (true, false) => (fpMessage, rocket.AssessmentText),
                 (false, true) => (fnMessage, fnAssessmentMessage)
             };
