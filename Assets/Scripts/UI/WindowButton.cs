@@ -5,7 +5,7 @@ namespace LaunchBad.UI
 {
     public class WindowButton : MonoBehaviour
     {
-        [SerializeField] private Canvas windowCanvas;
+        [SerializeField] private Window window;
         private Button _button;
         
         private void Awake()
@@ -25,7 +25,7 @@ namespace LaunchBad.UI
 
         private void ToggleWindow()
         {
-            windowCanvas.enabled = !windowCanvas.enabled;
+            window.ToggleVisibility();
         }
     }
 }
