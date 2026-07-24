@@ -14,6 +14,7 @@ namespace LaunchBad
 
         private void Update()
         {
+            if (_fuelTanks == null) return;
             UpdateTanks();
         }
 
@@ -42,6 +43,9 @@ namespace LaunchBad
         
         private void CheckTanks(float time)
         {
+            
+            if (_fuelTanks == null) return;
+            
             for (var i = 0; i < _fuelTanks.Count; i++)
             {
                 if (time <= _fuelTanks[i].FuelLeakStartTime)
