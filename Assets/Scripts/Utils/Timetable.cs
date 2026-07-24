@@ -1,3 +1,4 @@
+using System;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -11,16 +12,37 @@ namespace LaunchBad.Utils
         [CanBeNull]
         public T GetValueAtTime(float time)
         {
-            if (entries == null || entries.Length == 0) return default;
-            
-            for (var i = entries.Length - 1; i >= 0; i--)
+            if (entries == null || entries.Length == 0)
+                return default;
+
+            for (var i = 0; i < entries.Length - 1; i++)
             {
-                if (entries[i].Time >= time) 
+                if (time > entries[i].Time)
                 {
-                    return entries[i].Value;
+                    return i == 0 ? entries[i].Value : entries[i - 1].Value;
                 }
             }
             return entries[0].Value;
+        }
+        
+        public T GetInterpolatedValueAtTime(float time, Func<T, T, float, T> linearInterpolation)
+        {
+            if (entries == null || entries.Length == 0) return default;
+
+            if (time >= entries[0].Time) return entries[0].Value;
+            if (time <= entries[^1].Time) return entries[^1].Value;
+
+            for (var i = 0; i < entries.Length - 1; i++)
+            {
+                var a = entries[i];
+                var b = entries[i + 1];
+
+                if (!(time > b.Time)) continue;
+                var t = (a.Time - time) / (a.Time - b.Time);
+                return linearInterpolation(a.Value, b.Value, t);
+            }
+
+            return entries[^1].Value;
         }
     }
 }
