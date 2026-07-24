@@ -26,8 +26,8 @@ namespace LaunchBad
 
             var currentCountDownTime = Mathf.Max(_duration - (Time.time - _startTime), 0f);
 
-            var wind = _windTimetable.GetInterpolatedValueAtTime(currentCountDownTime, Mathf.Lerp);
-            var temperature = _temperatureTimetable.GetInterpolatedValueAtTime(currentCountDownTime, Mathf.Lerp);
+            var wind = _windTimetable.GetValueAtTime(currentCountDownTime);
+            var temperature = _temperatureTimetable.GetValueAtTime(currentCountDownTime);
             OnWindTemperatureChanged?.Invoke(wind, temperature);
 
             if (currentCountDownTime <= 0f) _isRunning = false;
