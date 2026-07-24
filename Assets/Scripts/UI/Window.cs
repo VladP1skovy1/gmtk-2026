@@ -48,5 +48,11 @@ namespace LaunchBad.UI
         {
             transform.SetAsLastSibling();
         }
+
+        public void Show()
+        {
+            _canvas.enabled = true;
+            transform.SetAsLastSibling();
+        }
     }
 }

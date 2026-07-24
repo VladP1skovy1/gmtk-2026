@@ -9,17 +9,25 @@ namespace LaunchBad.Core
     {
         [SerializeField] private float frequency = 1f;
         public static event Action<float> OnCountDown;
+        public static event Action OnCountDownFinished;
         
         private float _startTime;
 
         private void OnEnable()
         {
             GameManager.OnRocketChanged += StartCountDown;
+            AbortButton.OnAbort += StopCountDown;
         }
-        
+
         private void OnDisable()
         {
             GameManager.OnRocketChanged -= StartCountDown;
+            AbortButton.OnAbort -= StopCountDown;
+        }
+
+        private void StopCountDown()
+        {
+            StopAllCoroutines();
         }
 
         private void StartCountDown(Rocket rocket)
@@ -39,7 +47,7 @@ namespace LaunchBad.Core
                 OnCountDown?.Invoke(countDownDuration - elapsedTime);
                 yield return new WaitForSeconds(frequency);
             }
-            OnCountDown?.Invoke(0f);
+            OnCountDownFinished?.Invoke();
         }
     }
 }
