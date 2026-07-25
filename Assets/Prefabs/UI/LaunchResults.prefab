@@ -366,7 +366,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 51.55
+  m_fontSize: 38.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -421,7 +421,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1848499107942928310, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_Name
-      value: Results
+      value: LaunchResults
       objectReference: {fileID: 0}
     - target: {fileID: 2052188099219052375, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -515,14 +515,14 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 8136513471504244731}
-    - targetCorrespondingSourceObject: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1632833179203335809}
     - targetCorrespondingSourceObject: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4242420538370354048}
+    - targetCorrespondingSourceObject: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8136513471504244731}
     - targetCorrespondingSourceObject: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1923106418979283699}
