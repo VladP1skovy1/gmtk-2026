@@ -10,7 +10,7 @@ namespace LaunchBad
     {
         [SerializeField] private List<RocketSlider> sliders;
         private List<FuelTank> _fuelTanks;
-        
+
 
         private void Update()
         {
@@ -40,36 +40,26 @@ namespace LaunchBad
                 sliders[i].SetValue(_fuelTanks[i].CurrentFuelAmount);
             }
         }
-        
+
         private void CheckTanks(float time)
         {
-            
             if (_fuelTanks == null) return;
-            
+
             for (var i = 0; i < _fuelTanks.Count; i++)
             {
                 if (time <= _fuelTanks[i].FuelLeakStartTime)
                 {
                     _fuelTanks[i].isLeaking = true;
                 }
-
-                if (!(time <= 0)) continue;
-                if (_fuelTanks[i].CurrentFuelAmount <= _fuelTanks[i].RequiredFuelAmount)
-                {
-                    SendGameOver();
-                }
             }
         }
-        
-        private void SendGameOver()
-        {
-        }
-        
+
+
         private void OnCountDown(float time)
         {
             CheckTanks(time);
         }
-        
+
         private void OnRocketChange(Rocket rocket)
         {
             SetTanks(rocket);
