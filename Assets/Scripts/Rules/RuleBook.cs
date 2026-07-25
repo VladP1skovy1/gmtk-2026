@@ -1,4 +1,8 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using LaunchBad.Core;
+using LaunchBad.Windows;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -16,46 +20,66 @@ namespace LaunchBad.Rules
         [Header("References")]
         [SerializeField] private Transform ruleTabButtonsContainer;
         [SerializeField] private Transform ruleTabsContainer;
+        [SerializeField] private NewRulesWindow newRulesWindow;
         
         private float _tabButtonWidth;
+        private List<Rule> _newRules = new List<Rule>();
         
         private void Awake()
         {
             _tabButtonWidth = 1f / ruleTabs.Count;
+        }
+
+        private void OnEnable()
+        {
+            GameManager.OnNewLaunch += CreateRulebook;
+        }
+        
+        private void OnDisable()
+        {
+            GameManager.OnNewLaunch -= CreateRulebook;
+        }
+
+        private void CreateRulebook(int currentLaunchIndex)
+        {
+            _newRules.Clear();
             
             for (var i = 0; i < ruleTabs.Count; i++)
             {
-                CreateRuleTab(ruleTabs[i], i);
+                CreateRuleTab(ruleTabs[i], i, currentLaunchIndex);
             }
-            
+
+            newRulesWindow.SetNewRules(_newRules);
             RuleTabButton.ResetTabSelection();
         }
 
-        private void CreateRuleTab(RuleTab ruleTab, int index)
+        private void CreateRuleTab(RuleTab ruleTab, int tabIndex, int currentLaunchIndex)
         {
             var tabObject = Instantiate(ruleTabPrefab, ruleTabsContainer);
             var tabButtonObject = Instantiate(ruleTabButtonPrefab, ruleTabButtonsContainer);
             
             var tabButton = tabButtonObject.GetComponent<RuleTabButton>();
-            tabButton.Initialize(index);
+            tabButton.Initialize(tabIndex);
             
             var tabPanel = tabObject.GetComponent<RuleTabPanel>();
-            tabPanel.Initialize(index);
+            tabPanel.Initialize(tabIndex);
             
             tabButtonObject.GetComponentInChildren<TextMeshProUGUI>().text = ruleTab.TabName;
             
-            SetButtonTransform(tabButtonObject.GetComponent<RectTransform>(), index);
+            SetButtonTransform(tabButtonObject.GetComponent<RectTransform>(), tabIndex);
             
-            FillRuleTab(tabObject, ruleTab.Rules);
+            FillRuleTab(tabObject, ruleTab.Rules, currentLaunchIndex);
         }
 
-        private void FillRuleTab(GameObject tab, List<Rule> rules)
+        private void FillRuleTab(GameObject tab, List<Rule> rules, int currentLaunchIndex)
         {
             var contentTransform = tab.GetComponent<ScrollRect>().content;
-            
-            foreach (var rule in rules)
+
+            foreach (var rule in rules.Where(rule => rule.LaunchNumber <= currentLaunchIndex))
             {
                 CreateRuleText(rule, contentTransform);
+                if (rule.LaunchNumber != currentLaunchIndex) continue;
+                _newRules.Add(rule);
             }
         }
 

@@ -277,26 +277,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2749f5cd076a6749af82c7ecbea9523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.Rules.RuleBook
-  rules:
+  ruleTabs:
   - <TabName>k__BackingField: First Tab
     <Rules>k__BackingField:
     - <Text>k__BackingField: Alpha
       <LaunchNumber>k__BackingField: 0
     - <Text>k__BackingField: Beta
-      <LaunchNumber>k__BackingField: 0
+      <LaunchNumber>k__BackingField: 1
+    - <Text>k__BackingField: Gamma
+      <LaunchNumber>k__BackingField: 2
   - <TabName>k__BackingField: Second Tab
     <Rules>k__BackingField:
-    - <Text>k__BackingField: Alpha
+    - <Text>k__BackingField: Alfa
       <LaunchNumber>k__BackingField: 0
     - <Text>k__BackingField: Bravo
-      <LaunchNumber>k__BackingField: 0
+      <LaunchNumber>k__BackingField: 1
     - <Text>k__BackingField: Charlie
+      <LaunchNumber>k__BackingField: 2
+  - <TabName>k__BackingField: Third Tab
+    <Rules>k__BackingField:
+    - <Text>k__BackingField: AAA
       <LaunchNumber>k__BackingField: 0
+    - <Text>k__BackingField: BBB
+      <LaunchNumber>k__BackingField: 1
+    - <Text>k__BackingField: CCC
+      <LaunchNumber>k__BackingField: 2
   ruleTabPrefab: {fileID: 686526884145140289, guid: f62dc8aa6f791a14cb802233efc1f15a, type: 3}
   ruleTabButtonPrefab: {fileID: 1444927334004548670, guid: f0e08457ae926504ab374317c1ef9d82, type: 3}
   ruleTextPrefab: {fileID: 391303682332591117, guid: 0d12fc23dd3dfa24f80dfef04f333114, type: 3}
   ruleTabButtonsContainer: {fileID: 5517664264901736154}
   ruleTabsContainer: {fileID: 817103523261597006}
+  newRulesWindow: {fileID: 0}
 --- !u!224 &5621680146457944648 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}

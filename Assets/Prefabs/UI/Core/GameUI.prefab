@@ -94,6 +94,10 @@ PrefabInstance:
       propertyPath: window
       value: 
       objectReference: {fileID: 7347547586577576667}
+    - target: {fileID: 3002017764260410402, guid: 5832986c95d211848a79a9b4460408e7, type: 3}
+      propertyPath: window
+      value: 
+      objectReference: {fileID: 2616673343430186372}
     - target: {fileID: 3135449104311940808, guid: 5832986c95d211848a79a9b4460408e7, type: 3}
       propertyPath: window
       value: 
@@ -463,6 +467,17 @@ RectTransform:
 --- !u!114 &1656005952922056255 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8880232199773154805, guid: 2280460b490905240aee690cf38923c6, type: 3}
+  m_PrefabInstance: {fileID: 7910498533670591434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ded83b5536194d46a525bbe192c6fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.UI.WindowHeader
+--- !u!114 &2616673343430186372 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5302977617648733774, guid: 2280460b490905240aee690cf38923c6, type: 3}
   m_PrefabInstance: {fileID: 7910498533670591434}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

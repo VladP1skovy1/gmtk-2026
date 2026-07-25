@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using LaunchBad.Buttons;
 using LaunchBad.ScriptableObjects;
 using LaunchBad.Utils;
+using LaunchBad.Windows;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,17 +21,18 @@ namespace LaunchBad.Core
 
         [SerializeField] private int minRequiredGreenLights;
         [SerializeField] private int maxAmountRedLights;
+        
+        [SerializeField] private NewRulesWindow newRulesWindow;
 
         private int _currentGreenLightIndex;
         private int _currentRedLightIndex;
 
         private int _tpLaunches;
         private int _fpLaunches;
-
-
+        
         public static event Action<Rocket> OnRocketChanged;
         public static event Action<Rocket, bool> OnChoiceMade;
-
+        public static event Action<int> OnNewLaunch;
         public static event Action<EndGameStates> OnGameFinished;
 
         private Rocket _currentRocket;
@@ -48,7 +50,8 @@ namespace LaunchBad.Core
 
         private void HandleNextRocket()
         {
-            OnRocketChanged?.Invoke(_currentRocket);
+            OnNewLaunch?.Invoke(_currentRocketIndex);
+            newRulesWindow.Show(() => OnRocketChanged?.Invoke(_currentRocket));
         }
         
         private void CheckFinishRequirements(bool wasLaunched)
