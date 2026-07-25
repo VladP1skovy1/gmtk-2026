@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f053f06b711a9b43a0fbf0900445976, type: 3}
+  m_Name: Apollo8
+  m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.ScriptableObjects.Rocket
+  <CountDownDuration>k__BackingField: 10
+  <RocketName>k__BackingField: 
+  rocketWeight: 0
+  <TemperatureRange>k__BackingField: {x: 0, y: 0}
+  <WindRange>k__BackingField: {x: 0, y: 0}
+  <SpecialInstructions>k__BackingField: 
+  <FuelTanks>k__BackingField:
+  - InitialFuelAmount: 0
+    CurrentFuelAmount: 0
+    RequiredFuelAmount: 0
+    FuelLeakSpeed: 0
+    FuelLeakStartTime: 0
+    isLeaking: 1
+  - InitialFuelAmount: 50
+    CurrentFuelAmount: 50
+    RequiredFuelAmount: 0
+    FuelLeakSpeed: 0
+    FuelLeakStartTime: 0
+    isLeaking: 0
+  <WindTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 40
+    - <Time>k__BackingField: 2
+      <Value>k__BackingField: 10
+  <TemperatureTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 17
+    - <Time>k__BackingField: 2
+      <Value>k__BackingField: 13
+  <SkyTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 1
+    - <Time>k__BackingField: 6
+      <Value>k__BackingField: 2
+  <EngineSpriteMappings>k__BackingField:
+  - status: 1
+    sprite: {fileID: -5654892811611370131, guid: 18541aa899ba04f43b3d3c68a04ca9c9, type: 3}
+  <EngineTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 1
+  <AstronautSpriteMappings>k__BackingField:
+  - status: 0
+    sprite: {fileID: 42472389377123175, guid: 02357a8fd60fda74ca1228123663d83b, type: 3}
+  - status: 2
+    sprite: {fileID: 1314782526067359250, guid: 70d3a8b0cfe987b4ca22c47468aa7fb2, type: 3}
+  <AstronautsTimetables>k__BackingField:
+  - entries:
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 0
+  - entries:
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 2
+  - entries:
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 2
+    - <Time>k__BackingField: 5
+      <Value>k__BackingField: 0
+  <LaunchPadStatusInfos>k__BackingField: []
+  <LaunchPadTimetable>k__BackingField:
+    entries: []
+  <ShouldBeLaunched>k__BackingField: 0
+  <AssessmentText>k__BackingField: 

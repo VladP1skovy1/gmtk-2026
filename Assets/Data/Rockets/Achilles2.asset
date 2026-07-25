@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f053f06b711a9b43a0fbf0900445976, type: 3}
+  m_Name: Achilles2
+  m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.ScriptableObjects.Rocket
+  <CountDownDuration>k__BackingField: 17
+  <RocketName>k__BackingField: Achilles7
+  rocketWeight: 20000
+  <TemperatureRange>k__BackingField: {x: 13, y: 35}
+  <WindRange>k__BackingField: {x: 0, y: 30}
+  <SpecialInstructions>k__BackingField: Nordic gods are fools
+  <FuelTanks>k__BackingField:
+  - InitialFuelAmount: 100
+    CurrentFuelAmount: 100
+    RequiredFuelAmount: 30
+    FuelLeakSpeed: 0
+    FuelLeakStartTime: 0
+    isLeaking: 0
+  <WindTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 17
+      <Value>k__BackingField: 10
+    - <Time>k__BackingField: 14
+      <Value>k__BackingField: 20
+    - <Time>k__BackingField: 9
+      <Value>k__BackingField: 7
+    - <Time>k__BackingField: 3
+      <Value>k__BackingField: 27
+    - <Time>k__BackingField: 1
+      <Value>k__BackingField: 14
+  <TemperatureTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 17
+      <Value>k__BackingField: 22
+    - <Time>k__BackingField: 14
+      <Value>k__BackingField: 21
+    - <Time>k__BackingField: 5
+      <Value>k__BackingField: 22
+  <SkyTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 17
+      <Value>k__BackingField: 0
+    - <Time>k__BackingField: 9
+      <Value>k__BackingField: 1
+  <EngineSpriteMappings>k__BackingField:
+  - status: 1
+    sprite: {fileID: -5654892811611370131, guid: 18541aa899ba04f43b3d3c68a04ca9c9, type: 3}
+  - status: 2
+    sprite: {fileID: 8867743837156409360, guid: 60fddcf4a43bb314ea6031aaffc1f135, type: 3}
+  - status: 3
+    sprite: {fileID: 5693871672123343123, guid: 5520125e9b8065449b1c7b174b7c2b45, type: 3}
+  - status: 0
+    sprite: {fileID: -2685944269136757009, guid: 6825231f8aca92c4fa296e235b1d6949, type: 3}
+  <EngineTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 17
+      <Value>k__BackingField: 0
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 1
+  <AstronautSpriteMappings>k__BackingField:
+  - status: 1
+    sprite: {fileID: -2875941817094906568, guid: a9a6aa61504069744a1f743b7769fa6d, type: 3}
+  - status: 0
+    sprite: {fileID: 42472389377123175, guid: 02357a8fd60fda74ca1228123663d83b, type: 3}
+  - status: 2
+    sprite: {fileID: 1314782526067359250, guid: 70d3a8b0cfe987b4ca22c47468aa7fb2, type: 3}
+  <AstronautsTimetables>k__BackingField:
+  - entries:
+    - <Time>k__BackingField: 17
+      <Value>k__BackingField: 1
+    - <Time>k__BackingField: 14
+      <Value>k__BackingField: 2
+    - <Time>k__BackingField: 7
+      <Value>k__BackingField: 1
+  - entries:
+    - <Time>k__BackingField: 17
+      <Value>k__BackingField: 1
+  - entries:
+    - <Time>k__BackingField: 17
+      <Value>k__BackingField: 2
+    - <Time>k__BackingField: 7
+      <Value>k__BackingField: 1
+  <LaunchPadStatusInfos>k__BackingField:
+  - status: 0
+    sprite: {fileID: -6992864605617374387, guid: 426fa30b54348ae4ca6854413453bad8, type: 3}
+    reactionTime: 0
+    message: 
+  <LaunchPadTimetable>k__BackingField:
+    entries: []
+  <ShouldBeLaunched>k__BackingField: 1
+  <AssessmentText>k__BackingField: Congrats, Yakov, YOU DID IT
