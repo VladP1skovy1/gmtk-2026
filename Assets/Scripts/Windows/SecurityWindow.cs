@@ -1,8 +1,10 @@
+using LaunchBad.Core;
 using LaunchBad.UI;
+using LaunchBad.Utils;
 using TMPro;
 using UnityEngine;
 
-namespace LaunchBad
+namespace LaunchBad.Windows
 {
     public class SecurityWindow : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace LaunchBad
+namespace LaunchBad.Buttons
 {
     public class RestartButton : MonoBehaviour
     {

@@ -1,4 +1,4 @@
-﻿namespace LaunchBad
+﻿namespace LaunchBad.Utils
 {
     [System.Serializable]
     public class FuelTank

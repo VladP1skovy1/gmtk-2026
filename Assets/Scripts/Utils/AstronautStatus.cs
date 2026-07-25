@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LaunchBad
+namespace LaunchBad.Utils
 {
     public enum AstronautStatus
     {

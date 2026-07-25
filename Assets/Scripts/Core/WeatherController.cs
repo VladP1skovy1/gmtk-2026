@@ -1,10 +1,9 @@
 using System;
-using LaunchBad.Core;
 using LaunchBad.ScriptableObjects;
 using LaunchBad.Utils;
 using UnityEngine;
 
-namespace LaunchBad
+namespace LaunchBad.Core
 {
     public class WeatherController : MonoBehaviour
     {

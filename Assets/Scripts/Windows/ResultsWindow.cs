@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using Window = LaunchBad.UI.Window;
 
-namespace LaunchBad
+namespace LaunchBad.Windows
 {
     public class ResultsWindow : MonoBehaviour
     {

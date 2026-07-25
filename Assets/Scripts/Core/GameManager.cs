@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using LaunchBad.Buttons;
 using LaunchBad.ScriptableObjects;
+using LaunchBad.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,7 +43,7 @@ namespace LaunchBad.Core
 
             _currentRocketIndex = 0;
             _currentRocket = rockets[_currentRocketIndex];
-            OnRocketChanged?.Invoke(_currentRocket);
+            HandleNextRocket();
         }
 
         private void HandleNextRocket()

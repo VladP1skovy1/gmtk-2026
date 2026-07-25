@@ -3,7 +3,7 @@ using LaunchBad.ScriptableObjects;
 using TMPro;
 using UnityEngine;
 
-namespace LaunchBad
+namespace LaunchBad.Windows
 {
     public class RocketInfoWindow : MonoBehaviour
     {

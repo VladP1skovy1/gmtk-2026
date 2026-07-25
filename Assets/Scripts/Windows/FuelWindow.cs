@@ -2,9 +2,10 @@
 using LaunchBad.Core;
 using LaunchBad.ScriptableObjects;
 using LaunchBad.UI;
+using LaunchBad.Utils;
 using UnityEngine;
 
-namespace LaunchBad
+namespace LaunchBad.Windows
 {
     public class FuelWindow : MonoBehaviour
     {

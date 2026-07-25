@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace LaunchBad
+namespace LaunchBad.Buttons
 {
     public class NextRocketButton : MonoBehaviour
     {

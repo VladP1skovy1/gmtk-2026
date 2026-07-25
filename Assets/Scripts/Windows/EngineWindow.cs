@@ -5,7 +5,7 @@ using LaunchBad.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LaunchBad
+namespace LaunchBad.Windows
 {
     public class EngineWindow : MonoBehaviour
     {

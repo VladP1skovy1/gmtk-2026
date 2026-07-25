@@ -1,8 +1,10 @@
+using LaunchBad.Core;
 using LaunchBad.UI;
+using LaunchBad.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LaunchBad
+namespace LaunchBad.Windows
 {
     public class WeatherWindow : MonoBehaviour
     {

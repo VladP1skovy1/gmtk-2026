@@ -1,13 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using LaunchBad.Core;
 using LaunchBad.ScriptableObjects;
 using LaunchBad.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LaunchBad
+namespace LaunchBad.Core
 {
     public class SecurityManager : MonoBehaviour
     {

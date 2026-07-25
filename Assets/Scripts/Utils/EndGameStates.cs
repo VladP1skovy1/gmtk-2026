@@ -1,4 +1,4 @@
-﻿namespace LaunchBad
+﻿namespace LaunchBad.Utils
 {
     public enum EndGameStates
     {
