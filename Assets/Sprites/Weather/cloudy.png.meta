@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 89d355712366ed44ab837210ad138961
+guid: efd7ab78086fba949abfba9debed426e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8069201905153239655
-    second: photo_2026-07-24_11-50-31_0
+      213: 5704748392462881141
+    second: cloudy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: photo_2026-07-24_11-50-31_0
+      name: cloudy_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 369
-        height: 203
+        width: 576
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9959f66ae9f640090800000000000000
-      internalID: -8069201905153239655
+      spriteID: 5711bb910765b2f40800000000000000
+      internalID: 5704748392462881141
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      photo_2026-07-24_11-50-31_0: -8069201905153239655
+      cloudy_0: 5704748392462881141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

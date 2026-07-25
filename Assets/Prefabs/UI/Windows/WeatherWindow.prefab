@@ -224,9 +224,9 @@ MonoBehaviour:
   temperatureSlider: {fileID: 1605534457476557338}
   windSlider: {fileID: 75054099649936936}
   skyImage: {fileID: 2037759903104829983}
-  clearSkySprite: {fileID: 6776779564882836946, guid: 66c2db49f49ea854f91547a556696095, type: 3}
-  cloudySkySprite: {fileID: -8069201905153239655, guid: 89d355712366ed44ab837210ad138961, type: 3}
-  stormSkySprite: {fileID: 7642633592549062906, guid: bb20c346545114c4d88eddd65752f2fd, type: 3}
+  clearSkySprite: {fileID: -5905358785927170718, guid: 18970c2bfb05388419c62c7ab3998d7a, type: 3}
+  cloudySkySprite: {fileID: 5704748392462881141, guid: efd7ab78086fba949abfba9debed426e, type: 3}
+  stormSkySprite: {fileID: 2146828524736656195, guid: e4a8717f674cb834d80c591247915fce, type: 3}
   maxTemperature: 50
   maxWindSpeed: 70
 --- !u!1001 &7006282204667258705
