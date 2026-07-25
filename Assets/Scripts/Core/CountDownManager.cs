@@ -14,9 +14,9 @@ namespace LaunchBad.Core
         [SerializeField] private TextMeshProUGUI countdownText;
         public static event Action<float> OnCountDown;
         public static event Action OnCountDownFinished;
-        
+        public float CurrentCountDownValue { get; private set; }
+
         private float _startTime;
-        private float _currentCountDownValue;
         private bool _isCountingDown;
 
         private void OnEnable()
@@ -48,23 +48,23 @@ namespace LaunchBad.Core
         {
             if (!_isCountingDown) return;
             
-            _currentCountDownValue = Mathf.Max(_currentCountDownValue - Time.deltaTime, 0f);
-            countdownText.text = $"T-{_currentCountDownValue:F1}";
+            CurrentCountDownValue = Mathf.Max(CurrentCountDownValue - Time.deltaTime, 0f);
+            countdownText.text = $"T-{CurrentCountDownValue:F1}";
         }
 
         private void StartCountDown(Rocket rocket)
         {
-            _currentCountDownValue = rocket.CountDownDuration;
-            OnCountDown?.Invoke(_currentCountDownValue);
+            CurrentCountDownValue = rocket.CountDownDuration;
+            OnCountDown?.Invoke(CurrentCountDownValue);
             _isCountingDown = true;
             StartCoroutine(CountDownCoroutine());
         }
 
         private IEnumerator CountDownCoroutine()
         {
-            while (_currentCountDownValue > 0f)
+            while (CurrentCountDownValue > 0f)
             {
-                OnCountDown?.Invoke(_currentCountDownValue);
+                OnCountDown?.Invoke(CurrentCountDownValue);
                 yield return new WaitForSeconds(eventFrequency);
             }
             

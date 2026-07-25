@@ -19,12 +19,24 @@ MonoBehaviour:
   <WindRange>k__BackingField: {x: 0, y: 30}
   <SpecialInstructions>k__BackingField: Nordic gods are fools
   <FuelTanks>k__BackingField:
-  - InitialFuelAmount: 100
-    CurrentFuelAmount: 100
-    RequiredFuelAmount: 30
-    FuelLeakSpeed: 0
-    FuelLeakStartTime: 0
-    isLeaking: 0
+  - requiredFuelAmount: 0.5
+    fuelTimetable:
+      entries:
+      - <Time>k__BackingField: 17
+        <Value>k__BackingField: 1
+      - <Time>k__BackingField: 8
+        <Value>k__BackingField: 0.5
+      - <Time>k__BackingField: 0
+        <Value>k__BackingField: 1
+  - requiredFuelAmount: 0.7
+    fuelTimetable:
+      entries:
+      - <Time>k__BackingField: 17
+        <Value>k__BackingField: 0.5
+      - <Time>k__BackingField: 8
+        <Value>k__BackingField: 1
+      - <Time>k__BackingField: 0
+        <Value>k__BackingField: 0.5
   <WindTimetable>k__BackingField:
     entries:
     - <Time>k__BackingField: 17

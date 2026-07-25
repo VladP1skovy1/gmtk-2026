@@ -10,9 +10,9 @@ namespace LaunchBad.Windows
     public class FuelWindow : MonoBehaviour
     {
         [SerializeField] private List<RocketSlider> sliders;
+        [SerializeField] private CountDownManager countDownManager;
         private List<FuelTank> _fuelTanks;
-
-
+        
         private void Update()
         {
             if (_fuelTanks == null) return;
@@ -22,13 +22,16 @@ namespace LaunchBad.Windows
         private void SetTanks(Rocket rocket)
         {
             _fuelTanks = rocket.FuelTanks;
-            for (var i = 0; i < rocket.FuelTanks.Count; i++)
+            for (var i = 0; i < sliders.Count; i++)
             {
-                _fuelTanks[i].CurrentFuelAmount = _fuelTanks[i].InitialFuelAmount;
-                _fuelTanks[i].isLeaking = false;
-                sliders[i].SetValue(rocket.FuelTanks[i].CurrentFuelAmount);
-                sliders[i].SetPointer(rocket.FuelTanks[i].RequiredFuelAmount);
+                if (i >= _fuelTanks.Count)
+                {
+                    sliders[i].gameObject.SetActive(false);
+                    continue;
+                }
+                
                 sliders[i].gameObject.SetActive(true);
+                sliders[i].SetPointer(rocket.FuelTanks[i].requiredFuelAmount);
             }
         }
 
@@ -36,31 +39,10 @@ namespace LaunchBad.Windows
         {
             for (var i = 0; i < _fuelTanks.Count; i++)
             {
-                if (!_fuelTanks[i].isLeaking) continue;
-                _fuelTanks[i].CurrentFuelAmount -= _fuelTanks[i].FuelLeakSpeed * Time.deltaTime;
-                sliders[i].SetValue(_fuelTanks[i].CurrentFuelAmount);
+                sliders[i].SetValue(_fuelTanks[i].fuelTimetable.GetValueAtTime(countDownManager.CurrentCountDownValue));
             }
         }
-
-        private void CheckTanks(float time)
-        {
-            if (_fuelTanks == null) return;
-
-            for (var i = 0; i < _fuelTanks.Count; i++)
-            {
-                if (time <= _fuelTanks[i].FuelLeakStartTime)
-                {
-                    _fuelTanks[i].isLeaking = true;
-                }
-            }
-        }
-
-
-        private void OnCountDown(float time)
-        {
-            CheckTanks(time);
-        }
-
+        
         private void OnRocketChange(Rocket rocket)
         {
             SetTanks(rocket);
@@ -68,13 +50,11 @@ namespace LaunchBad.Windows
 
         private void OnEnable()
         {
-            CountDownManager.OnCountDown += OnCountDown;
             GameManager.OnRocketChanged += OnRocketChange;
         }
 
         private void OnDisable()
         {
-            CountDownManager.OnCountDown -= OnCountDown;
             GameManager.OnRocketChanged -= OnRocketChange;
         }
     }

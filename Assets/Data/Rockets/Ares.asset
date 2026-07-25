@@ -19,24 +19,24 @@ MonoBehaviour:
   <WindRange>k__BackingField: {x: 0, y: 0}
   <SpecialInstructions>k__BackingField: 
   <FuelTanks>k__BackingField:
-  - InitialFuelAmount: 0.3
-    CurrentFuelAmount: -5.7020764
-    RequiredFuelAmount: 0.7
-    FuelLeakSpeed: 0.3
-    FuelLeakStartTime: 27
-    isLeaking: 1
-  - InitialFuelAmount: 0.5
-    CurrentFuelAmount: -1.8048398
-    RequiredFuelAmount: 0.5
-    FuelLeakSpeed: 0.1
-    FuelLeakStartTime: 30
-    isLeaking: 1
-  - InitialFuelAmount: 0.7
-    CurrentFuelAmount: -1.6048398
-    RequiredFuelAmount: 0.3
-    FuelLeakSpeed: 0.1
-    FuelLeakStartTime: 30
-    isLeaking: 1
+  - requiredFuelAmount: 0
+    fuelTimetable:
+      entries:
+      - <Time>k__BackingField: 30
+        <Value>k__BackingField: 1
+      - <Time>k__BackingField: 15
+        <Value>k__BackingField: 0.5
+      - <Time>k__BackingField: 0
+        <Value>k__BackingField: 1
+  - requiredFuelAmount: 0
+    fuelTimetable:
+      entries:
+      - <Time>k__BackingField: 30
+        <Value>k__BackingField: 1
+      - <Time>k__BackingField: 8
+        <Value>k__BackingField: 0.5
+      - <Time>k__BackingField: 0
+        <Value>k__BackingField: 1
   <WindTimetable>k__BackingField:
     entries:
     - <Time>k__BackingField: 30
