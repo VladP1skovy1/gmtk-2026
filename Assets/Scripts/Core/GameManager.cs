@@ -89,9 +89,6 @@ namespace LaunchBad.Core
                     _currentRedLightIndex++;
                     _fpLaunches++;
                     break;
-                case true when !wasLaunched:
-                    _currentGreenLightIndex++;
-                    break;
             }
             _currentRocketIndex++;
             CheckFinishRequirements(wasLaunched);
