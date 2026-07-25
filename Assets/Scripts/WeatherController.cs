@@ -46,6 +46,7 @@ namespace LaunchBad
 
         private void OnCountDown(float time)
         {
+            if (_skyTimetable == null) return;
             var newStatus = _skyTimetable.GetValueAtTime(time);
             if (newStatus == CurrentSkyStatus) return;
             
