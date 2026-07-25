@@ -43,6 +43,9 @@ namespace LaunchBad.Buttons
         private void OnDisable()
         {
             _button.onClick.RemoveListener(Abort);
+            GameManager.OnNewLaunch -= HandleNewLaunch;
+            GameManager.OnChoiceMade -= HandleChoiceMade;
+            GameManager.OnRocketChanged -= HandleRocketChanged;
         }
 
         private void Abort()
