@@ -47,6 +47,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.Core.GameManager
   testRocket: {fileID: 11400000, guid: d2acccf86e559a04580fa2edf59199a1, type: 2}
+  rockets:
+  - {fileID: 11400000, guid: 865ac6ec74a6725458aebdb45a151259, type: 2}
+  - {fileID: 11400000, guid: 02067cfbff91c214197881a92ec69784, type: 2}
+  - {fileID: 11400000, guid: 17f0786163768e64fabc0e625b29987c, type: 2}
+  greenLights:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  redLights:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  greenActiveLight: {fileID: -5654892811611370131, guid: 18541aa899ba04f43b3d3c68a04ca9c9, type: 3}
+  redActiveLight: {fileID: -2685944269136757009, guid: 6825231f8aca92c4fa296e235b1d6949, type: 3}
+  minRequiredGreenLights: 2
+  maxAmountRedLights: 1
 --- !u!114 &2375566489216163326
 MonoBehaviour:
   m_ObjectHideFlags: 0

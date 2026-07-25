@@ -32,11 +32,18 @@ namespace LaunchBad
         private void OnEnable()
         {
             GameManager.OnChoiceMade += HandleChoiceMade;
+            GameManager.OnRocketChanged += HandleRocketChanged;
         }
 
         private void OnDisable()
         {
             GameManager.OnChoiceMade -= HandleChoiceMade;
+            GameManager.OnRocketChanged -= HandleRocketChanged;
+        }
+
+        private void HandleRocketChanged(Rocket rocket)
+        {
+            _window.Hide();
         }
 
         private void HandleChoiceMade(Rocket rocket, bool wasLaunched)
