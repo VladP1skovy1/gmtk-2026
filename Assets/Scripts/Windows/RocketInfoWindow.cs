@@ -25,8 +25,8 @@ namespace LaunchBad.Windows
         private void HandleRocketChanged(Rocket rocket)
         {
             nameText.text = rocket.RocketName;
-            temperatureText.text = $"Temperature Range: {rocket.TemperatureRange.x}-{rocket.TemperatureRange.y} °C";
-            windText.text = $"Wind: {rocket.WindRange.y} m/s";
+            temperatureText.text = $"- Temperature Range: {rocket.TemperatureRange.x}-{rocket.TemperatureRange.y} °C";
+            windText.text = $"- Wind: {rocket.WindRange.y} m/s";
             specialInstructionsText.text = $"{rocket.SpecialInstructions}";
         }
     }
