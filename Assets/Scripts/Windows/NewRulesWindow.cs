@@ -46,7 +46,7 @@ namespace LaunchBad.Windows
             {
                 var ruleTextObject = Instantiate(ruleText, rulesContainer);
                 var textComponent = ruleTextObject.GetComponent<TextMeshProUGUI>();
-                textComponent.text = rule.Text;
+                textComponent.text = $"- {rule.Text}";
             }
         }
     }
