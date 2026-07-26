@@ -17,6 +17,7 @@ MonoBehaviour:
   rocketWeight: 20000
   <TemperatureRange>k__BackingField: {x: 13, y: 35}
   <WindRange>k__BackingField: {x: 0, y: 30}
+  <EngineIgnitionTime>k__BackingField: 7
   <SpecialInstructions>k__BackingField: Nordic gods are fools
   <FuelTanks>k__BackingField:
   - requiredFuelAmount: 0.5

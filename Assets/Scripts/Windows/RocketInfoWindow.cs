@@ -10,6 +10,7 @@ namespace LaunchBad.Windows
         [SerializeField] private TextMeshProUGUI nameText;
         [SerializeField] private TextMeshProUGUI temperatureText;
         [SerializeField] private TextMeshProUGUI windText;
+        [SerializeField] private TextMeshProUGUI engineIgnitionTimeText; 
         [SerializeField] private TextMeshProUGUI specialInstructionsText;
 
         private void OnEnable()
@@ -27,6 +28,7 @@ namespace LaunchBad.Windows
             nameText.text = rocket.RocketName;
             temperatureText.text = $"- Temperature Range: {rocket.TemperatureRange.x}-{rocket.TemperatureRange.y} °C";
             windText.text = $"- Wind: {rocket.WindRange.y} m/s";
+            engineIgnitionTimeText.text = $"- Engine Ignition Time: {rocket.EngineIgnitionTime}s (T-{rocket.EngineIgnitionTime:00.0})";
             specialInstructionsText.text = $"{rocket.SpecialInstructions}";
         }
     }

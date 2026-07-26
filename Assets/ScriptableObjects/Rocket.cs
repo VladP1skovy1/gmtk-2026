@@ -14,6 +14,7 @@ namespace LaunchBad.ScriptableObjects
         [SerializeField] private int rocketWeight;
         [field: SerializeField] public Vector2 TemperatureRange { get; private set; }
         [field: SerializeField] public Vector2 WindRange { get; private set; }
+        [field: SerializeField] public float EngineIgnitionTime { get; private set; }
         [field: SerializeField] public string SpecialInstructions { get; private set; }
         
         [field: Header("Fuel Schedule")]
