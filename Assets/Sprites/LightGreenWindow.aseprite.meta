@@ -125,7 +125,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: DarkGreenWindow
+  - name: LightGreenWindow
     originalName: 
     pivot: {x: 0.49650356, y: -0.49367088}
     alignment: 9
@@ -137,7 +137,7 @@ ScriptedImporter:
       y: 4
       width: 143
       height: 79
-    spriteID: b938ba8a3db955b4eb647ca1693e713f
+    spriteID: 5cd46162b1aec6244b3efed3117984c5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,12 +151,12 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 607103755
+      value0: 2349957941
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: DarkGreenWindow
+    name: LightGreenWindow
     layerFlags: 0
     layerType: 0
     blendMode: 0
@@ -169,7 +169,7 @@ ScriptedImporter:
         y: 39
         width: 143
         height: 79
-      spriteId: b938ba8a3db955b4eb647ca1693e713f
+      spriteId: 5cd46162b1aec6244b3efed3117984c5
     linkedCells: []
     tileCells: []
     tileSetIndex: 0

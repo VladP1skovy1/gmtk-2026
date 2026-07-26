@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b29ffb13106a6724bbb842770790dd62
+guid: 9f3d163d3144d75449c87ae6fa8ff76b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -125,19 +125,19 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: WeatherSliders
+  - name: sky-clouds
     originalName: 
-    pivot: {x: 0, y: 1}
-    alignment: 1
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 49
-      height: 74
-    spriteID: e03a26a77dccde94393e9b105c9175de
+      width: 116
+      height: 83
+    spriteID: 5fec30d6e97d8c8409e6ab0f3256cf13
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,25 +151,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3162032420
+      value0: 3259387988
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: WeatherSliders
+    name: sky-clouds
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: WeatherSliders
+    - name: sky-clouds
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 4
-        y: 14
-        width: 49
-        height: 74
-      spriteId: e03a26a77dccde94393e9b105c9175de
+        x: 0
+        y: 0
+        width: 116
+        height: 83
+      spriteId: 5fec30d6e97d8c8409e6ab0f3256cf13
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -178,5 +178,5 @@ ScriptedImporter:
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
-  previousTextureSize: {x: 64, y: 128}
-  canvasSize: {x: 61, y: 94}
+  previousTextureSize: {x: 128, y: 128}
+  canvasSize: {x: 116, y: 83}

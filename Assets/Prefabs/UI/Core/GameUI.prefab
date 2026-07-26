@@ -125,7 +125,7 @@ PrefabInstance:
     - target: {fileID: 2702159485295135931, guid: 5832986c95d211848a79a9b4460408e7, type: 3}
       propertyPath: window
       value: 
-      objectReference: {fileID: 7347547586577576667}
+      objectReference: {fileID: 457297145115155937}
     - target: {fileID: 3002017764260410402, guid: 5832986c95d211848a79a9b4460408e7, type: 3}
       propertyPath: window
       value: 
@@ -404,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4493852057750473875, guid: 2280460b490905240aee690cf38923c6, type: 3}
       propertyPath: m_fontSize
-      value: 5.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4832402252927119753, guid: 2280460b490905240aee690cf38923c6, type: 3}
       propertyPath: m_Name
@@ -555,6 +555,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2280460b490905240aee690cf38923c6, type: 3}
+--- !u!114 &457297145115155937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7754945488470443563, guid: 2280460b490905240aee690cf38923c6, type: 3}
+  m_PrefabInstance: {fileID: 7910498533670591434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ded83b5536194d46a525bbe192c6fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.UI.WindowHeader
 --- !u!224 &1543799138194065568 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8695062893910266730, guid: 2280460b490905240aee690cf38923c6, type: 3}
@@ -596,17 +607,6 @@ MonoBehaviour:
 --- !u!114 &6763559917537842349 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3466436260812738407, guid: 2280460b490905240aee690cf38923c6, type: 3}
-  m_PrefabInstance: {fileID: 7910498533670591434}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ded83b5536194d46a525bbe192c6fdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.UI.WindowHeader
---- !u!114 &7347547586577576667 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 589979354798434577, guid: 2280460b490905240aee690cf38923c6, type: 3}
   m_PrefabInstance: {fileID: 7910498533670591434}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
