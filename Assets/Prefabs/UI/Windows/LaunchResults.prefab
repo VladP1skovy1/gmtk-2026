@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6658723031540372887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1, y: 0.1}
-  m_AnchorMax: {x: 0.9, y: 0.65}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -56.7042}
+  m_SizeDelta: {x: 112, y: 50.0648}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8584948909579481800
 CanvasRenderer:
@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Successful Launch
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 04a824208fddd7b479fbb3234c4b5350, type: 2}
+  m_sharedMaterial: {fileID: 5629811222919996706, guid: 04a824208fddd7b479fbb3234c4b5350, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 4
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -169,10 +169,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6658723031540372887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1, y: 0.7}
-  m_AnchorMax: {x: 0.9, y: 0.9}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -14.432739}
+  m_SizeDelta: {x: 112, y: 8.865501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1645738858766884213
 CanvasRenderer:
@@ -204,8 +204,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Successful Launch
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 04a824208fddd7b479fbb3234c4b5350, type: 2}
+  m_sharedMaterial: {fileID: 5629811222919996706, guid: 04a824208fddd7b479fbb3234c4b5350, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -229,8 +229,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 6
+  m_fontSizeBase: 6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.65
+  m_fontSize: 0
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -431,6 +431,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5648637177744539299, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6223823281032952449, guid: da26b2df23a2ffe4b9a86ea9042180a3, type: 3}
+    - target: {fileID: 5648637177744539299, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5648637177744539299, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5648637177744539299, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -441,27 +457,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.8
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.9
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -555,6 +571,8 @@ MonoBehaviour:
   fpMessage: Launch Failed
   fnMessage: 'The rocket should have been launched. '
   fnAssessmentMessage: The rocket was good to go.
+  positiveBackground: {fileID: -6223823281032952449, guid: da26b2df23a2ffe4b9a86ea9042180a3, type: 3}
+  negativeBackground: {fileID: 8248231783500414558, guid: 1802e601a1d52f647ab4c611626057d9, type: 3}
 --- !u!224 &3829389023097676262 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
@@ -573,6 +591,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6658723031540372887}
     m_Modifications:
+    - target: {fileID: 750257501768367871, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750257501768367871, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5866259224526510680, guid: 0139e2e5bfd03544bbf477f11037f844, type: 3}
     - target: {fileID: 1670098017720025984, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_Name
       value: NextRocketButton
@@ -587,27 +613,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.95
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.8
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.05
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_LocalPosition.x
@@ -643,7 +669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2476114535634891847, guid: 558cc5736a24eb0479702b65fb5a82df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

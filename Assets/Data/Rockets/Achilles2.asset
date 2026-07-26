@@ -81,11 +81,11 @@ MonoBehaviour:
       <Value>k__BackingField: 1
   <AstronautSpriteMappings>k__BackingField:
   - status: 1
-    sprite: {fileID: -2875941817094906568, guid: a9a6aa61504069744a1f743b7769fa6d, type: 3}
+    sprite: {fileID: 7322623618734257971, guid: 4d74ee5933496db4ea1e85e7ae7207cf, type: 3}
   - status: 0
-    sprite: {fileID: 42472389377123175, guid: 02357a8fd60fda74ca1228123663d83b, type: 3}
+    sprite: {fileID: 3476762472304922179, guid: 640b3dd258280784f9634e0da36addb6, type: 3}
   - status: 2
-    sprite: {fileID: 1314782526067359250, guid: 70d3a8b0cfe987b4ca22c47468aa7fb2, type: 3}
+    sprite: {fileID: -8157219629832634589, guid: 1db57dd5ea96a8943b76213f37aff385, type: 3}
   <AstronautsTimetables>k__BackingField:
   - entries:
     - <Time>k__BackingField: 17
