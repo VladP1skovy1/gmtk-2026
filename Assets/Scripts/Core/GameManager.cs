@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using LaunchBad.Buttons;
 using LaunchBad.ScriptableObjects;
@@ -34,6 +35,8 @@ namespace LaunchBad.Core
         public static event Action<Rocket, bool> OnChoiceMade;
         public static event Action<int> OnNewLaunch;
         public static event Action<EndGameStates> OnGameFinished;
+        
+        public static event Action<bool, Action> OnRocketAnimation;
 
         private Rocket _currentRocket;
         private int _currentRocketIndex;
@@ -75,27 +78,37 @@ namespace LaunchBad.Core
             }
         }
         
-        private void MakeChoice(bool wasLaunched)
+        private IEnumerator MakeChoice(bool wasLaunched)
         {
+            bool animationFinished = false;
+
             switch (_currentRocket.ShouldBeLaunched)
             {
                 case true when wasLaunched:
+                    OnRocketAnimation?.Invoke(true, () => animationFinished = true);
+                    yield return new WaitUntil(() => animationFinished);
+
                     greenLights[_currentGreenLightIndex].sprite = greenActiveLight;
                     _currentGreenLightIndex++;
                     _tpLaunches++;
                     break;
+
                 case false when wasLaunched:
+                    OnRocketAnimation?.Invoke(false, () => animationFinished = true);
+                    yield return new WaitUntil(() => animationFinished);
+
                     redLights[_currentRedLightIndex].sprite = redActiveLight;
                     _currentRedLightIndex++;
                     _fpLaunches++;
                     break;
             }
+
             _currentRocketIndex++;
             CheckFinishRequirements(wasLaunched);
         }
 
-        private void HandleAbort() => MakeChoice(false);
-        private void HandleLaunch() => MakeChoice(true);
+        private void HandleAbort() => StartCoroutine(MakeChoice(false));
+        private void HandleLaunch() => StartCoroutine(MakeChoice(true));
         
         private void OnEnable()
         {

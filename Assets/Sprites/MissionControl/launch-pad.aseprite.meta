@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78cc2a569197dd848b0da400617fb80a
+guid: 60eea4ca9bdd2454885a83487062c798
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -125,9 +125,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: LightGreenWindow
+  - name: launch-pad
     originalName: 
-    pivot: {x: 0.49650356, y: -0.49367088}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -135,9 +135,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 143
-      height: 79
-    spriteID: 5cd46162b1aec6244b3efed3117984c5
+      width: 64
+      height: 64
+    spriteID: 3e4827f4ea2bc0243af48e6c56c90392
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,25 +151,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2349957941
+      value0: 47061121
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: LightGreenWindow
+    name: launch-pad
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: LightGreenWindow
+    - name: launch-pad
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 73
-        y: 39
-        width: 143
-        height: 79
-      spriteId: 5cd46162b1aec6244b3efed3117984c5
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 3e4827f4ea2bc0243af48e6c56c90392
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -178,5 +178,5 @@ ScriptedImporter:
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
-  previousTextureSize: {x: 256, y: 128}
-  canvasSize: {x: 288, y: 163}
+  previousTextureSize: {x: 128, y: 128}
+  canvasSize: {x: 64, y: 64}
