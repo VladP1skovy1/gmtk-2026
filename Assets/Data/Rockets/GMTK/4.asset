@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f053f06b711a9b43a0fbf0900445976, type: 3}
+  m_Name: 4
+  m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.ScriptableObjects.Rocket
+  <CountDownDuration>k__BackingField: 30
+  <RocketName>k__BackingField: Hel IV
+  rocketWeight: 0
+  <TemperatureRange>k__BackingField: {x: -10, y: 30}
+  <WindRange>k__BackingField: {x: 0, y: 25}
+  <EngineIgnitionTime>k__BackingField: 7
+  <SpecialInstructions>k__BackingField: '-'
+  <FuelTanks>k__BackingField:
+  - requiredFuelAmount: 0.5
+    fuelTimetable:
+      entries:
+      - <Time>k__BackingField: 30
+        <Value>k__BackingField: 0.9
+      - <Time>k__BackingField: 20
+        <Value>k__BackingField: 0.5
+      - <Time>k__BackingField: 10
+        <Value>k__BackingField: 0.3
+  - requiredFuelAmount: 0.7
+    fuelTimetable:
+      entries:
+      - <Time>k__BackingField: 30
+        <Value>k__BackingField: 0.9
+      - <Time>k__BackingField: 15
+        <Value>k__BackingField: 0.8
+      - <Time>k__BackingField: 0
+        <Value>k__BackingField: 0.95
+  - requiredFuelAmount: 0.4
+    fuelTimetable:
+      entries:
+      - <Time>k__BackingField: 30
+        <Value>k__BackingField: 0.9
+      - <Time>k__BackingField: 15
+        <Value>k__BackingField: 0.7
+      - <Time>k__BackingField: 0
+        <Value>k__BackingField: 0.9
+  <WindTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 0.1
+    - <Time>k__BackingField: 25
+      <Value>k__BackingField: 0.2
+    - <Time>k__BackingField: 20
+      <Value>k__BackingField: 0.25
+    - <Time>k__BackingField: 15
+      <Value>k__BackingField: 0.05
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 0.3
+    - <Time>k__BackingField: 5
+      <Value>k__BackingField: 0.1
+    - <Time>k__BackingField: 0
+      <Value>k__BackingField: 0.15
+  <TemperatureTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 0.5
+    - <Time>k__BackingField: 25
+      <Value>k__BackingField: 0.55
+    - <Time>k__BackingField: 20
+      <Value>k__BackingField: 0.52
+    - <Time>k__BackingField: 15
+      <Value>k__BackingField: 0.48
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 0.46
+    - <Time>k__BackingField: 5
+      <Value>k__BackingField: 0.49
+    - <Time>k__BackingField: 0.51
+      <Value>k__BackingField: 0.49
+  <SkyTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 0
+    - <Time>k__BackingField: 15
+      <Value>k__BackingField: 1
+    - <Time>k__BackingField: 10
+      <Value>k__BackingField: 0
+  <EngineSpriteMappings>k__BackingField:
+  - status: 0
+    sprite: {fileID: 5530735686506361384, guid: bd3fe9779e6270041b5908d8e2e4ccd2, type: 3}
+  - status: 1
+    sprite: {fileID: 5457008666278986047, guid: 8d37c00e900b1f845ba8d2288f5a46fd, type: 3}
+  - status: 2
+    sprite: {fileID: -8408940621679523429, guid: 737b24fba16d06d4a88ef20f7fed47b4, type: 3}
+  - status: 3
+    sprite: {fileID: -6147959612829962265, guid: 8151bf222749b0d41a6814a1966e62c2, type: 3}
+  <EngineTimetable>k__BackingField:
+    entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 0
+    - <Time>k__BackingField: 7
+      <Value>k__BackingField: 1
+  <AstronautSpriteMappings>k__BackingField:
+  - status: 1
+    sprite: {fileID: 7322623618734257971, guid: 4d74ee5933496db4ea1e85e7ae7207cf, type: 3}
+  - status: 0
+    sprite: {fileID: -8157219629832634589, guid: 1db57dd5ea96a8943b76213f37aff385, type: 3}
+  - status: 2
+    sprite: {fileID: 3476762472304922179, guid: 640b3dd258280784f9634e0da36addb6, type: 3}
+  <AstronautsTimetables>k__BackingField:
+  - entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 1
+  - entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 1
+  - entries:
+    - <Time>k__BackingField: 30
+      <Value>k__BackingField: 1
+  <LaunchPadStatusInfos>k__BackingField: []
+  <LaunchPadTimetable>k__BackingField:
+    entries: []
+  <ShouldBeLaunched>k__BackingField: 0
+  <AssessmentText>k__BackingField: Not enough fuel

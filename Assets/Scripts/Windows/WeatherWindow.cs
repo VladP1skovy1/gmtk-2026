@@ -31,8 +31,8 @@ namespace LaunchBad.Windows
         
         private void SetWindTemperature(float wind, float temperature)
         {
-            windSlider.SetValue(wind / maxWindSpeed);
-            temperatureSlider.SetValue(temperature / maxTemperature);
+            windSlider.SetValue(wind);
+            temperatureSlider.SetValue(temperature);
         }
 
         private void OnEnable()

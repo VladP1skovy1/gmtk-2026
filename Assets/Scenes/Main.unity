@@ -1152,9 +1152,53 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: rockets.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
       propertyPath: redLights.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 95627d5e4ef78f846ba7f57ca662f448, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 229f759bb0c482249b9348eea3ad802a, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d90dd42063204b40b3887f2a0490041, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 40e133f543014eb479332a32e58f8bd4, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 20ed8a3742f8c024eb60a256b11cf3a8, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 65c478109c8750c4db83398f97236e6c, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d4c748636f44cf45b41243ca057289d, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e296fd3c307c3bd43887b701c7da8c82, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 43dc2a37bfc29044488cd895e60e1de3, type: 2}
+    - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
+      propertyPath: 'rockets.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ffefac1420755044cbf6858a330402c9, type: 2}
     - target: {fileID: 3975988979883187880, guid: 1d598630400b58549b24fa0ddd7d2fb3, type: 3}
       propertyPath: greenLights.Array.size
       value: 3
