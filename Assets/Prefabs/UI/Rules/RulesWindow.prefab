@@ -335,7 +335,7 @@ MonoBehaviour:
     - <Text>k__BackingField: This window contains all the instructions needed to
         decide if the rocket launch should be aborted, split into several tabs, and
         can be opened using the blue button.
-      <LaunchNumber>k__BackingField: 0
+      <LaunchNumber>k__BackingField: -1
     - <Text>k__BackingField: Some rockets have special instructions written in the
         Rocket Info Window. The general rules still apply, unless the special instructions
         specify otherwise.
