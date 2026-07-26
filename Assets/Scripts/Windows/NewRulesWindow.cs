@@ -16,6 +16,7 @@ namespace LaunchBad.Windows
         
         private Action _onConfirmAction;
         private Window _window;
+        private bool _areNewRulesAdded;
         
         private void Awake()
         {
@@ -25,6 +26,11 @@ namespace LaunchBad.Windows
         
         public void Show(Action onConfirm)
         {
+            if (!_areNewRulesAdded)
+            {
+                onConfirm?.Invoke();
+                return;
+            }
             _onConfirmAction = onConfirm;
             _window.Show();
         }
@@ -37,6 +43,7 @@ namespace LaunchBad.Windows
 
         public void SetNewRules(List<Rule> newRules)
         {
+            _areNewRulesAdded = newRules.Count > 0;
             foreach (Transform child in rulesContainer)
             {
                 Destroy(child.gameObject);
