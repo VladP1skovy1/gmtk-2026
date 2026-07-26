@@ -28,7 +28,7 @@ namespace LaunchBad.Rules
         
         private void Awake()
         {
-            _tabButtonWidth = GetComponent<RectTransform>().sizeDelta.x / ruleTabs.Count;
+            _tabButtonWidth = ruleTabButtonsContainer.GetComponent<RectTransform>().sizeDelta.x / ruleTabs.Count;
         }
 
         private void OnEnable()
