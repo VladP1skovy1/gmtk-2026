@@ -23,6 +23,12 @@ namespace LaunchBad.Buttons
             GameManager.OnNewLaunch += HandleNewLaunch;
             GameManager.OnChoiceMade += HandleChoiceMade;
             GameManager.OnRocketChanged += HandleRocketChanged;
+            GameManager.OnRocketAnimation += HandleRocketAnimation;
+        }
+
+        private void HandleRocketAnimation(bool arg1, Action arg2)
+        {
+            _button.interactable = false;
         }
 
         private void HandleRocketChanged(Rocket obj)
@@ -46,6 +52,7 @@ namespace LaunchBad.Buttons
             GameManager.OnNewLaunch -= HandleNewLaunch;
             GameManager.OnChoiceMade -= HandleChoiceMade;
             GameManager.OnRocketChanged -= HandleRocketChanged;
+            GameManager.OnRocketAnimation -= HandleRocketAnimation;
         }
 
         private void Abort()
