@@ -410,6 +410,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windows
       objectReference: {fileID: 0}
+    - target: {fileID: 4954777895858512670, guid: 2280460b490905240aee690cf38923c6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954777895858512670, guid: 2280460b490905240aee690cf38923c6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 5366151832514322673, guid: 2280460b490905240aee690cf38923c6, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
