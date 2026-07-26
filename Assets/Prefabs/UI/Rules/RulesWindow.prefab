@@ -349,8 +349,8 @@ MonoBehaviour:
         maximum value specified in the Rocket Info, the launch must be aborted immediately. '
       <LaunchNumber>k__BackingField: 0
     - <Text>k__BackingField: 'Rockets could only be launched during clear or cloudy
-        weather. If storm clouds could be seen in the Weather Window, the launch
-        must be aborted. '
+        weather. If a storm could be seen in the Weather Window, the launch must
+        be aborted. '
       <LaunchNumber>k__BackingField: 2
   - <TabName>k__BackingField: Fuel
     <Rules>k__BackingField:

@@ -73,8 +73,8 @@ namespace LaunchBad.Core
             }
             else
             {
-                _currentRocket = rockets[_currentRocketIndex];
                 OnChoiceMade?.Invoke(_currentRocket, wasLaunched);
+                _currentRocket = rockets[_currentRocketIndex];
             }
         }
         
