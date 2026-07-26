@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a320aa29ab8e85c4eb0a28ce5a4264df
+guid: a80df1981b1bc4840b86d88bbd95db95
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -125,7 +125,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: CloseButton
+  - name: FuelHuelBackground
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -135,9 +135,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 9
-      height: 5
-    spriteID: 9f788a05ca82caa418603889e14d00d6
+      width: 158
+      height: 100
+    spriteID: 741005c5ef011dc4687f4abc4a68f197
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,25 +151,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 347293458
+      value0: 340399656
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: CloseButton
+    name: FuelHuelBackground
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: CloseButton
+    - name: FuelHuelBackground
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 9
-        height: 5
-      spriteId: 9f788a05ca82caa418603889e14d00d6
+        width: 158
+        height: 100
+      spriteId: 741005c5ef011dc4687f4abc4a68f197
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -178,5 +178,5 @@ ScriptedImporter:
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
-  previousTextureSize: {x: 32, y: 16}
-  canvasSize: {x: 9, y: 5}
+  previousTextureSize: {x: 256, y: 128}
+  canvasSize: {x: 158, y: 100}
