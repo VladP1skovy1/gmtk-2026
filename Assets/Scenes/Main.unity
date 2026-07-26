@@ -1912,6 +1912,22 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1301266910401969648, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301266910401969648, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1489770550}
+    - target: {fileID: 1301266910401969648, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301266910401969648, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LaunchBad.Core.SceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1319064980254340670, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 505.91418
@@ -1994,6 +2010,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2663968704391091023, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669605893373008315, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2754435320083815149, guid: 392ecc8bbb66cf045ad15ce9269cf77a, type: 3}
