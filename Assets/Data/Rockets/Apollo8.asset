@@ -65,8 +65,14 @@ MonoBehaviour:
     - <Time>k__BackingField: 6
       <Value>k__BackingField: 2
   <EngineSpriteMappings>k__BackingField:
+  - status: 2
+    sprite: {fileID: -8408940621679523429, guid: 737b24fba16d06d4a88ef20f7fed47b4, type: 3}
+  - status: 3
+    sprite: {fileID: -6147959612829962265, guid: 8151bf222749b0d41a6814a1966e62c2, type: 3}
+  - status: 0
+    sprite: {fileID: 5530735686506361384, guid: bd3fe9779e6270041b5908d8e2e4ccd2, type: 3}
   - status: 1
-    sprite: {fileID: -5654892811611370131, guid: 18541aa899ba04f43b3d3c68a04ca9c9, type: 3}
+    sprite: {fileID: 5457008666278986047, guid: 8d37c00e900b1f845ba8d2288f5a46fd, type: 3}
   <EngineTimetable>k__BackingField:
     entries:
     - <Time>k__BackingField: 10
