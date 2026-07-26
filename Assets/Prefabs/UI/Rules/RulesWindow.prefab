@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5621680146457944648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.89}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -8}
+  m_SizeDelta: {x: 120, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4949425521141086341
 CanvasRenderer:
@@ -107,10 +107,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5621680146457944648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.89}
-  m_AnchorMax: {x: 1, y: 0.95}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -10}
+  m_SizeDelta: {x: 120, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2954217494503973764
 CanvasRenderer:
@@ -140,8 +140,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -3082130729382453130, guid: fc5070cbbe43f0d4586fe01be1e477fa, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -166,6 +166,38 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254464043965343911, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -176,27 +208,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -278,36 +310,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LaunchBad.Rules.RuleBook
   ruleTabs:
-  - <TabName>k__BackingField: First Tab
+  - <TabName>k__BackingField: General
     <Rules>k__BackingField:
-    - <Text>k__BackingField: Alpha
+    - <Text>k__BackingField: This window contains all the instructions needed to
+        decide if the rocket launch should be aborted, split into several tabs, and
+        can be opened using the blue button.
       <LaunchNumber>k__BackingField: 0
-    - <Text>k__BackingField: Beta
-      <LaunchNumber>k__BackingField: 1
-    - <Text>k__BackingField: Gamma
-      <LaunchNumber>k__BackingField: 2
-  - <TabName>k__BackingField: Second Tab
+    - <Text>k__BackingField: Some rockets have special instructions written in the
+        Rocket Info Window. The general rules still apply, unless the special instructions
+        specify otherwise.
+      <LaunchNumber>k__BackingField: 8
+  - <TabName>k__BackingField: Weather
     <Rules>k__BackingField:
-    - <Text>k__BackingField: Alfa
+    - <Text>k__BackingField: 'If the temperature reaches a value outside the range
+        specified in the Rocket Info Window, the launch must be aborted immediately. '
       <LaunchNumber>k__BackingField: 0
-    - <Text>k__BackingField: Bravo
-      <LaunchNumber>k__BackingField: 1
-    - <Text>k__BackingField: Charlie
+    - <Text>k__BackingField: 'If the speed of the wind reaches the value above the
+        maximum value specified in the Rocket Info, the launch must be aborted immediately. '
+      <LaunchNumber>k__BackingField: 0
+    - <Text>k__BackingField: 'Rockets could only be launched during clear or cloudy
+        weather. If storm clouds could be seen in the Weather Window, the launch
+        must be aborted. '
       <LaunchNumber>k__BackingField: 2
-  - <TabName>k__BackingField: Third Tab
+  - <TabName>k__BackingField: Fuel
     <Rules>k__BackingField:
-    - <Text>k__BackingField: AAA
-      <LaunchNumber>k__BackingField: 0
-    - <Text>k__BackingField: BBB
-      <LaunchNumber>k__BackingField: 1
-    - <Text>k__BackingField: CCC
-      <LaunchNumber>k__BackingField: 2
+    - <Text>k__BackingField: 'If the fuel level displayed in the Fuel Tank Window
+        drops below the mark, the launch should be aborted immediately. '
+      <LaunchNumber>k__BackingField: 3
+  - <TabName>k__BackingField: Engine
+    <Rules>k__BackingField:
+    - <Text>k__BackingField: If the engine shown in the Engine Window is sparking
+        or smoking, the launch should be aborted immediately.
+      <LaunchNumber>k__BackingField: 4
+    - <Text>k__BackingField: If the engine shown in the Engine Window does not ignite
+        at the exact time specified in the Rocket Info, the launch should be aborted
+        immediately.
+      <LaunchNumber>k__BackingField: 4
+  - <TabName>k__BackingField: Crew
+    <Rules>k__BackingField:
+    - <Text>k__BackingField: If more than half of the crew is depressed, with less
+        than 10 seconds remaining, the launch should be aborted.
+      <LaunchNumber>k__BackingField: 6
+    - <Text>k__BackingField: 'If any crew member is sick, the launch should be aborted
+        immediately. '
+      <LaunchNumber>k__BackingField: 6
   ruleTabPrefab: {fileID: 686526884145140289, guid: f62dc8aa6f791a14cb802233efc1f15a, type: 3}
   ruleTabButtonPrefab: {fileID: 1444927334004548670, guid: f0e08457ae926504ab374317c1ef9d82, type: 3}
   ruleTextPrefab: {fileID: 391303682332591117, guid: 0d12fc23dd3dfa24f80dfef04f333114, type: 3}
   ruleTabButtonsContainer: {fileID: 5517664264901736154}
   ruleTabsContainer: {fileID: 817103523261597006}
   newRulesWindow: {fileID: 0}
+  tabButtonHeight: 12
 --- !u!224 &5621680146457944648 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5928659981880564950, guid: 4003b472723343144b7ff66f8c4bb23b, type: 3}

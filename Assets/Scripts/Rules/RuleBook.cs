@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using LaunchBad.Core;
@@ -21,13 +20,15 @@ namespace LaunchBad.Rules
         [SerializeField] private Transform ruleTabButtonsContainer;
         [SerializeField] private Transform ruleTabsContainer;
         [SerializeField] private NewRulesWindow newRulesWindow;
+        [Header("Settings")]
+        [SerializeField] private float tabButtonHeight;
         
         private float _tabButtonWidth;
         private List<Rule> _newRules = new List<Rule>();
         
         private void Awake()
         {
-            _tabButtonWidth = 1f / ruleTabs.Count;
+            _tabButtonWidth = GetComponent<RectTransform>().sizeDelta.x / ruleTabs.Count;
         }
 
         private void OnEnable()
@@ -87,14 +88,13 @@ namespace LaunchBad.Rules
         {
             var ruleTextObject = Instantiate(ruleTextPrefab, contentTransform);
             var ruleTextComponent = ruleTextObject.GetComponent<TextMeshProUGUI>();
-            ruleTextComponent.text = rule.Text;
+            ruleTextComponent.text = $"- {rule.Text}";
         }
 
         private void SetButtonTransform(RectTransform buttonTransform, int index)
         {
-            var buttonAnchorsX = new Vector2(index * _tabButtonWidth, (index + 1) * _tabButtonWidth);
-            buttonTransform.anchorMin = new Vector2(buttonAnchorsX.x, 0);
-            buttonTransform.anchorMax = new Vector2(buttonAnchorsX.y, 1);
+            buttonTransform.sizeDelta = new Vector2(_tabButtonWidth, tabButtonHeight);
+            buttonTransform.anchoredPosition = new Vector2(index * _tabButtonWidth + _tabButtonWidth / 2, 0);
         }
     }
 }
